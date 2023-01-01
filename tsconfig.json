@@ -7,7 +7,7 @@
     "skipLibCheck": true,
     "outDir": "./dist",
     "moduleResolution": "Node",
-    // "rootDir": "./src",
+    "rootDir": "./src",
 
     "esModuleInterop": true,
     "allowJs": true
