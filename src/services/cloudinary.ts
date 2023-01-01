@@ -28,12 +28,14 @@ const deleteFile = async (imgUrl: string) => {
   })
 }
 
+const params = {
+  folder: 'tailor',
+  allowedFormats: ['jpg', 'png', 'jpeg']
+}
+
 const storage = new CloudinaryStorage({
   cloudinary: cloudinaryV2,
-  params: {
-    folder: 'tailor',
-    allowedFormats: ['jpg', 'png', 'jpeg']
-  }
+  params
 })
 
 export default { setUp, deleteFile, storage }
